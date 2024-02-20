@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle
-import scikit-learn
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.metrics import r2_score
 import pandas as pd
 import numpy as np
 from PIL import Image
